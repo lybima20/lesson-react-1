@@ -1,35 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from './Button';
+import React from "react";
+import "./App.css";
+import Pop from "./Popup";
+import Header from "./Header";
+ import Button from './Button';
+ import Footer from "./Footer";
+
 
 function App() {
-  const buttonText = "learn";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button text = {buttonText} />
+<Header text="Vika Zakordonets" className="header"/>
+      <Pop />
 
-
-          {/* React.Fragment:
-          <>
-            <p>1</p>
-            <p>2</p>
-            </> */}
-        </a>
-      </header>
+      <Footer text="lybima20" className="text2"/>
+      <Button />
     </div>
   );
 }
 
 export default App;
+
